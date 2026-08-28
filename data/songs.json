@@ -1,0 +1,671 @@
+{
+  "generatedAt": "2026-08-28T11:31:01.288Z",
+  "songs": [
+    {
+      "id": "2k3MdyqMHmfZubFg3pmtby",
+      "artist": "Katy Perry",
+      "title": "The One That Got Away",
+      "year": 2010,
+      "videoId": "ePQe5E69INg",
+      "viewCount": 47256225,
+      "tier": "Expert"
+    },
+    {
+      "id": "6aqNCrRA7vs7v6QvRpI50t",
+      "artist": "Robyn",
+      "title": "Dancing On My Own",
+      "year": 2010,
+      "videoId": "CcNo07Xp8aQ",
+      "viewCount": 100780288,
+      "tier": "Hard"
+    },
+    {
+      "id": "2ENexcMEMsYk0rVJigVD3i",
+      "artist": "Rihanna",
+      "title": "Only Girl (In The World)",
+      "year": 2010,
+      "videoId": "-ySWIyJj3I0",
+      "viewCount": 26876147,
+      "tier": "Expert"
+    },
+    {
+      "id": "3iEUDvanZwQhLCIqUmCR7N",
+      "artist": "Mac Miller",
+      "title": "The Spins",
+      "year": 2010,
+      "videoId": "mkGT1c98soU",
+      "viewCount": 33699909,
+      "tier": "Expert"
+    },
+    {
+      "id": "4JHg4nNYUJQ5HULcCmI18R",
+      "artist": "Two Door Cinema Club",
+      "title": "What You Know",
+      "year": 2010,
+      "videoId": "YXwYJyrKK5A",
+      "viewCount": 169145109,
+      "tier": "Hard"
+    },
+    {
+      "id": "6SKwQghsR8AISlxhcwyA9R",
+      "artist": "Bruno Mars",
+      "title": "Marry You",
+      "year": 2010,
+      "videoId": "dElRVQFqj-k",
+      "viewCount": 179214112,
+      "tier": "Hard"
+    },
+    {
+      "id": "47Slg6LuqLaX0VodpSCvPt",
+      "artist": "Bruno Mars",
+      "title": "Just the Way You Are",
+      "year": 2010,
+      "videoId": "LjhCEhWiKXk",
+      "viewCount": 2203785724,
+      "tier": "Easy"
+    },
+    {
+      "id": "0JXXNGljqupsJaZsgSbMZV",
+      "artist": "Miguel",
+      "title": "Sure Thing",
+      "year": 2010,
+      "videoId": "q4GJVOMjCC4",
+      "viewCount": 223928023,
+      "tier": "Medium"
+    },
+    {
+      "id": "15JINEqzVMv3SvJTAXAKED",
+      "artist": "Eminem",
+      "title": "Love The Way You Lie",
+      "year": 2010,
+      "videoId": "mD57Bbv53Yw",
+      "viewCount": 7094003,
+      "tier": "Impossible"
+    },
+    {
+      "id": "7ySUcLPVX7KudhnmNcgY2D",
+      "artist": "Rihanna",
+      "title": "S&M",
+      "year": 2010,
+      "videoId": "Ce2_k0LaE7E",
+      "viewCount": 73900963,
+      "tier": "Expert"
+    },
+    {
+      "id": "0HPD5WQqrq7wPWR7P7Dw1i",
+      "artist": "Kesha",
+      "title": "TiK ToK",
+      "year": 2010,
+      "videoId": "OF04pKp-r9o",
+      "viewCount": 73399801,
+      "tier": "Expert"
+    },
+    {
+      "id": "4lLtanYk6tkMvooU0tWzG8",
+      "artist": "Bruno Mars",
+      "title": "Grenade",
+      "year": 2010,
+      "videoId": "SR6iYWJxHqs",
+      "viewCount": 1273719136,
+      "tier": "Easy"
+    },
+    {
+      "id": "4HlFJV71xXKIGcU3kRyttv",
+      "artist": "Train",
+      "title": "Hey, Soul Sister",
+      "year": 2010,
+      "videoId": "kVpv8-5XWOI",
+      "viewCount": 436759563,
+      "tier": "Medium"
+    },
+    {
+      "id": "4356Typ82hUiFAynbLYbPn",
+      "artist": "USHER",
+      "title": "DJ Got Us Fallin' In Love (feat. Pitbull)",
+      "year": 2010,
+      "videoId": "C-dvTjK_07c",
+      "viewCount": 458893525,
+      "tier": "Medium"
+    },
+    {
+      "id": "7pYfyrMNPn3wtoCyqcTVoI",
+      "artist": "Maroon 5",
+      "title": "Moves Like Jagger - Studio Recording From \"The Voice\" Performance",
+      "year": 2010,
+      "videoId": "suRsxpoAc5w",
+      "viewCount": 250086663,
+      "tier": "Medium"
+    },
+    {
+      "id": "4mVOwzuPKrMb4CDVe9Q4Hs",
+      "artist": "Katy Perry",
+      "title": "Last Friday Night (T.G.I.F.)",
+      "year": 2010,
+      "videoId": "KlyXNRrsk4A",
+      "viewCount": 1595087025,
+      "tier": "Easy"
+    },
+    {
+      "id": "6epn3r7S14KUqlReYr77hA",
+      "artist": "Justin Bieber",
+      "title": "Baby",
+      "year": 2010,
+      "videoId": "kffacxfA7G4",
+      "viewCount": 3734515885,
+      "tier": "Easy"
+    },
+    {
+      "id": "22L7bfCiAkJo5xGSQgmiIO",
+      "artist": "Kanye West",
+      "title": "All Of The Lights",
+      "year": 2010,
+      "videoId": "HAfFfqiYLp0",
+      "viewCount": 351115060,
+      "tier": "Medium"
+    },
+    {
+      "id": "6GQLX6Z28fYwDNCrhaKzYF",
+      "artist": "Two Door Cinema Club",
+      "title": "Undercover Martyn",
+      "year": 2010,
+      "videoId": "LLK4oaXUuLg",
+      "viewCount": 52067989,
+      "tier": "Expert"
+    },
+    {
+      "id": "6lV2MSQmRIkycDScNtrBXO",
+      "artist": "B.o.B",
+      "title": "Airplanes (feat. Hayley Williams of Paramore)",
+      "year": 2010,
+      "videoId": "kn6-c223DUU",
+      "viewCount": 774278474,
+      "tier": "Easy"
+    },
+    {
+      "id": "7xkQdy0cy5ymoWT7nedvLz",
+      "artist": "Jason Derulo",
+      "title": "Whatcha Say",
+      "year": 2010,
+      "videoId": "pBI3lc18k8Q",
+      "viewCount": 407315669,
+      "tier": "Medium"
+    },
+    {
+      "id": "2cY7WSxFIsZQaoDNJe7Fz3",
+      "artist": "Tinie Tempah",
+      "title": "Pass Out",
+      "year": 2010,
+      "videoId": "QzvGKas5RsU",
+      "viewCount": 104218526,
+      "tier": "Hard"
+    },
+    {
+      "id": "6ebkx7Q5tTxrCxKq4GYj0Y",
+      "artist": "Flo Rida",
+      "title": "Club Can't Handle Me (feat. David Guetta)",
+      "year": 2010,
+      "videoId": "SgM3r8xKfGE",
+      "viewCount": 587548604,
+      "tier": "Easy"
+    },
+    {
+      "id": "4vVTI94F9uJ8lHNDWKv0i2",
+      "artist": "Sean Kingston",
+      "title": "Eenie Meenie",
+      "year": 2010,
+      "videoId": "prmmCg5bKxA",
+      "viewCount": 934994246,
+      "tier": "Easy"
+    },
+    {
+      "id": "1wVuPmvt6AWvTL5W2GJnzZ",
+      "artist": "Bruno Mars",
+      "title": "Talking to the Moon",
+      "year": 2010,
+      "videoId": "fXw0jcYbqdo",
+      "viewCount": 243823765,
+      "tier": "Medium"
+    },
+    {
+      "id": "7hCNBVRhHzcsRAv0TQnOzq",
+      "artist": "Bruno Mars",
+      "title": "Runaway Baby",
+      "year": 2010,
+      "videoId": "HIgvP7B3Hg8",
+      "viewCount": 48626767,
+      "tier": "Expert"
+    },
+    {
+      "id": "3JA9Jsuxr4xgHXEawAdCp4",
+      "artist": "Black Eyed Peas",
+      "title": "Just Can’t Get Enough",
+      "year": 2010,
+      "videoId": "MUCo7vM-FCk",
+      "viewCount": 27116448,
+      "tier": "Expert"
+    },
+    {
+      "id": "386RUes7n1uM1yfzgeUuwp",
+      "artist": "Bruno Mars",
+      "title": "The Lazy Song",
+      "year": 2010,
+      "videoId": "fLexgOxsZu0",
+      "viewCount": 3279781105,
+      "tier": "Easy"
+    },
+    {
+      "id": "0j55p8YRAPG8yajtNyjt6A",
+      "artist": "Gyptian",
+      "title": "Hold You - Hold Yuh",
+      "year": 2010,
+      "videoId": "O6SeD1xE7NA",
+      "viewCount": 216869492,
+      "tier": "Medium"
+    },
+    {
+      "id": "5YJtMNWKe55yr49cyJgxva",
+      "artist": "Cascada",
+      "title": "Everytime We Touch",
+      "year": 2010,
+      "videoId": "84sHTvn6xf8",
+      "viewCount": 52338616,
+      "tier": "Expert"
+    },
+    {
+      "id": "2gZUPNdnz5Y45eiGxpHGSc",
+      "artist": "Kanye West",
+      "title": "POWER",
+      "year": 2010,
+      "videoId": "SUtf9Ajlno4",
+      "viewCount": 8345538,
+      "tier": "Impossible"
+    },
+    {
+      "id": "4TVuirwgzxe9fWRBoWtPpq",
+      "artist": "Katy Perry",
+      "title": "Firework",
+      "year": 2010,
+      "videoId": "QGJuMBdaqIw",
+      "viewCount": 1578411523,
+      "tier": "Easy"
+    },
+    {
+      "id": "3hlksXnvbKogFdPbpO9vel",
+      "artist": "Nicki Minaj",
+      "title": "Super Bass",
+      "year": 2010,
+      "videoId": "4JipHEz53sU",
+      "viewCount": 1109921129,
+      "tier": "Easy"
+    },
+    {
+      "id": "59dLtGBS26x7kc0rHbaPrq",
+      "artist": "B.o.B",
+      "title": "Nothin' on You (feat. Bruno Mars)",
+      "year": 2010,
+      "videoId": "8PTDv_szmL0",
+      "viewCount": 540222562,
+      "tier": "Easy"
+    },
+    {
+      "id": "4o4wEDRqotccDTXiQ7TORu",
+      "artist": "Alicia Keys",
+      "title": "Un-thinkable (I'm Ready) (feat. Drake) - Remix",
+      "year": 2010,
+      "videoId": "AEZLbq5o4AE",
+      "viewCount": 52313512,
+      "tier": "Expert"
+    },
+    {
+      "id": "6DkXLzBQT7cwXmTyzAB1DJ",
+      "artist": "Rihanna",
+      "title": "What's My Name?",
+      "year": 2010,
+      "videoId": "U0CGsw6h60k",
+      "viewCount": 1155848717,
+      "tier": "Easy"
+    },
+    {
+      "id": "3B5UbSndRz907IZhhmUfLi",
+      "artist": "Bruno Mars",
+      "title": "Count on Me",
+      "year": 2010,
+      "videoId": "6k8cpUkKK4c",
+      "viewCount": 85938013,
+      "tier": "Hard"
+    },
+    {
+      "id": "1bM50INir8voAkVoKuvEUI",
+      "artist": "USHER",
+      "title": "OMG (feat. will.i.am)",
+      "year": 2010,
+      "videoId": "1RnPB76mjxI",
+      "viewCount": 236694036,
+      "tier": "Medium"
+    },
+    {
+      "id": "11ozIUBoXAgRTVWelDn4pL",
+      "artist": "Ellie Goulding",
+      "title": "Lights",
+      "year": 2010,
+      "videoId": "0NKUpo_xKyQ",
+      "viewCount": 266353057,
+      "tier": "Medium"
+    },
+    {
+      "id": "3kSuigMCaMtyHXcMs1vbg8",
+      "artist": "Example",
+      "title": "Kickstarts",
+      "year": 2010,
+      "videoId": "T9yGcKlYAiw",
+      "viewCount": 36823927,
+      "tier": "Expert"
+    },
+    {
+      "id": "7GAaTpSoTWUTbP2Yxlt4Hd",
+      "artist": "Lady A",
+      "title": "Need You Now",
+      "year": 2010,
+      "videoId": "eM213aMKTHg",
+      "viewCount": 742607095,
+      "tier": "Easy"
+    },
+    {
+      "id": "030OCtLMrljNhp8OWHBWW3",
+      "artist": "USHER",
+      "title": "Hey Daddy (Daddy's Home)",
+      "year": 2010,
+      "videoId": "pD8mxge6kek",
+      "viewCount": 262291507,
+      "tier": "Medium"
+    },
+    {
+      "id": "5AyL2kgLtTWEu3qO3B9SqK",
+      "artist": "Far East Movement",
+      "title": "Like A G6",
+      "year": 2010,
+      "videoId": "GvgJEznqtms",
+      "viewCount": 99221061,
+      "tier": "Hard"
+    },
+    {
+      "id": "238Sekyg7DyN2XDm0z4oWY",
+      "artist": "Drake",
+      "title": "Fancy",
+      "year": 2010,
+      "videoId": "ZenXuQBgbgk",
+      "viewCount": 5178819,
+      "tier": "Impossible"
+    },
+    {
+      "id": "6OEolOOk9Gh9bqkdpfIOl0",
+      "artist": "Jason Derulo",
+      "title": "Ridin' Solo",
+      "year": 2010,
+      "videoId": "8ESdn0MuJWQ",
+      "viewCount": 160545298,
+      "tier": "Hard"
+    },
+    {
+      "id": "1gv4xPanImH17bKZ9rOveR",
+      "artist": "P!nk",
+      "title": "Raise Your Glass",
+      "year": 2010,
+      "videoId": "XjVNlG5cZyQ",
+      "viewCount": 261006758,
+      "tier": "Medium"
+    },
+    {
+      "id": "5uOUxoxEMZQo0cFT9YWFdi",
+      "artist": "Katy Perry",
+      "title": "California Gurls",
+      "year": 2010,
+      "videoId": "F57P9C4SAW4",
+      "viewCount": 835407670,
+      "tier": "Easy"
+    },
+    {
+      "id": "6b4IqYnduSQl3fE5YIbYVs",
+      "artist": "Katy Perry",
+      "title": "Teenage Dream",
+      "year": 2010,
+      "videoId": "98WtmW-lfeE",
+      "viewCount": 388905197,
+      "tier": "Medium"
+    },
+    {
+      "id": "3ZdJffjzJWFimSQyxgGIxN",
+      "artist": "Nelly",
+      "title": "Just A Dream",
+      "year": 2010,
+      "videoId": "N6O2ncUKvlg",
+      "viewCount": 1046904615,
+      "tier": "Easy"
+    },
+    {
+      "id": "4JEylZNW8SbO4zUyfVrpb7",
+      "artist": "Billy Ocean",
+      "title": "Caribbean Queen (No More Love On the Run)",
+      "year": 2010,
+      "videoId": "uxX2gA18grk",
+      "viewCount": 215412051,
+      "tier": "Medium"
+    },
+    {
+      "id": "5VA4Ispp52EA1sOqzMz3Av",
+      "artist": "Miguel",
+      "title": "All I Want Is You (feat. J. Cole)",
+      "year": 2010,
+      "videoId": "n7PVhQPaFNY",
+      "viewCount": 80242916,
+      "tier": "Hard"
+    },
+    {
+      "id": "3pYDZTJM2tVBUhIRifWVzI",
+      "artist": "Kesha",
+      "title": "Blow",
+      "year": 2010,
+      "videoId": "vxchPg3Ty9s",
+      "viewCount": 16862654,
+      "tier": "Impossible"
+    },
+    {
+      "id": "03tqyYWC9Um2ZqU0ZN849H",
+      "artist": "Waka Flocka Flame",
+      "title": "No Hands (feat. Roscoe Dash & Wale)",
+      "year": 2010,
+      "videoId": "skhxizRYxps",
+      "viewCount": 113541121,
+      "tier": "Hard"
+    },
+    {
+      "id": "67SrO8B3O8iUq0AmEh0VzJ",
+      "artist": "Two Door Cinema Club",
+      "title": "Something Good Can Work",
+      "year": 2010,
+      "videoId": "Wxu02vp_Vm0",
+      "viewCount": 25715388,
+      "tier": "Expert"
+    },
+    {
+      "id": "63Tl9k1sH8tznn3bqoMuyF",
+      "artist": "Shakira",
+      "title": "Waka Waka (This Time for Africa) - K-Mix",
+      "year": 2010,
+      "videoId": "pRpeEdMmmQ0",
+      "viewCount": 4730245607,
+      "tier": "Easy"
+    },
+    {
+      "id": "6St9lR6dhV2tpCNVz7qfrS",
+      "artist": "Jason Derulo",
+      "title": "In My Head",
+      "year": 2010,
+      "videoId": "LU-ZQWZSGfc",
+      "viewCount": 115499729,
+      "tier": "Hard"
+    },
+    {
+      "id": "5D5Iwi9xI64mqdQOU9lTui",
+      "artist": "CeeLo Green",
+      "title": "Fuck You",
+      "year": 2010,
+      "videoId": "CAV0XrbEwNc",
+      "viewCount": 37793306,
+      "tier": "Expert"
+    },
+    {
+      "id": "7Ie9W94M7OjPoZVV216Xus",
+      "artist": "Eminem",
+      "title": "Not Afraid",
+      "year": 2010,
+      "videoId": "j5-yKhDd64s",
+      "viewCount": 2105823058,
+      "tier": "Easy"
+    },
+    {
+      "id": "44A0o4jA8F2ZF03Zacwlwx",
+      "artist": "Patrick Watson",
+      "title": "Je te laisserai des mots",
+      "year": 2010,
+      "videoId": "XZfyyk0_Yqs",
+      "viewCount": 24372625,
+      "tier": "Impossible"
+    },
+    {
+      "id": "3LUWWox8YYykohBbHUrrxd",
+      "artist": "Kesha",
+      "title": "We R Who We R",
+      "year": 2010,
+      "videoId": "mXvmSaE0JXA",
+      "viewCount": 127839858,
+      "tier": "Hard"
+    },
+    {
+      "id": "14OF4JQOIm4hb0GfG5nfyF",
+      "artist": "Ellie Goulding",
+      "title": "Starry Eyed",
+      "year": 2010,
+      "videoId": "fBf2v4mLM8k",
+      "viewCount": 53673215,
+      "tier": "Expert"
+    },
+    {
+      "id": "0WyrV2BjeXmQjlHHdfV9nJ",
+      "artist": "Taio Cruz",
+      "title": "Break Your Heart",
+      "year": 2010,
+      "videoId": "y_SI2EDM6Lo",
+      "viewCount": 324637028,
+      "tier": "Medium"
+    },
+    {
+      "id": "5W7xC99N2Zzfh69r7I7zWK",
+      "artist": "Rick Ross",
+      "title": "Aston Martin Music",
+      "year": 2010,
+      "videoId": "a35rNEBNiO4",
+      "viewCount": 460571451,
+      "tier": "Medium"
+    },
+    {
+      "id": "4ercRiJZl8kBm8vfPaNjrl",
+      "artist": "Gorillaz",
+      "title": "On Melancholy Hill",
+      "year": 2010,
+      "videoId": "04mfKJWDSzI",
+      "viewCount": 315420322,
+      "tier": "Medium"
+    },
+    {
+      "id": "2GYHyAoLWpkxLVa4oYTVko",
+      "artist": "Stromae",
+      "title": "Alors on danse - Radio Edit",
+      "year": 2010,
+      "videoId": "VHoT4N43jK8",
+      "viewCount": 557726049,
+      "tier": "Easy"
+    },
+    {
+      "id": "5xYC48nOppVemY6U5GRGTb",
+      "artist": "David Guetta",
+      "title": "Memories (feat. Kid Cudi)",
+      "year": 2010,
+      "videoId": "NUVCQXMUVnI",
+      "viewCount": 759536982,
+      "tier": "Easy"
+    },
+    {
+      "id": "1Bx0zEdVjkFlV27iKaePug",
+      "artist": "Rihanna",
+      "title": "Man Down",
+      "year": 2010,
+      "videoId": "joGVme3M4MQ",
+      "viewCount": 24929310,
+      "tier": "Impossible"
+    },
+    {
+      "id": "2qPUnoasNe4Ep43emVXEig",
+      "artist": "Travie McCoy",
+      "title": "Billionaire (feat. Bruno Mars)",
+      "year": 2010,
+      "videoId": "8aRor905cCw",
+      "viewCount": 678039751,
+      "tier": "Easy"
+    },
+    {
+      "id": "5kVU4z9zL3M7w7EVhBBbEF",
+      "artist": "Plan B",
+      "title": "She Said",
+      "year": 2010,
+      "videoId": "rQjh9H-ymK4",
+      "viewCount": 53734250,
+      "tier": "Expert"
+    },
+    {
+      "id": "2srTtSrzY4n10C7abVTrBm",
+      "artist": "Taio Cruz",
+      "title": "Dynamite",
+      "year": 2010,
+      "videoId": "kJNyjdpT1vo",
+      "viewCount": 39405836,
+      "tier": "Expert"
+    },
+    {
+      "id": "2chyJjEMYj397jz1QLEGO7",
+      "artist": "Tinie Tempah",
+      "title": "Written in the Stars (feat. Eric Turner)",
+      "year": 2010,
+      "videoId": "cMg5cQd5f50",
+      "viewCount": 37260367,
+      "tier": "Expert"
+    },
+    {
+      "id": "393MDhe62s8hbH8ETrlxe5",
+      "artist": "Kid Cudi",
+      "title": "Mr. Rager",
+      "year": 2010,
+      "videoId": "06r35x1nvo0",
+      "viewCount": 5545658,
+      "tier": "Impossible"
+    },
+    {
+      "id": "0Ai6qtPfiEYGCqBGJYWD1W",
+      "artist": "Baddiel, Skinner & Lightning Seeds",
+      "title": "Three Lions (Football's Coming Home)",
+      "year": 2010,
+      "videoId": "RJqimlFcJsM",
+      "viewCount": 56063462,
+      "tier": "Expert"
+    },
+    {
+      "id": "1ia019RqDK2o4QiANR1Dyn",
+      "artist": "Nicki Minaj",
+      "title": "Moment 4 Life",
+      "year": 2010,
+      "videoId": "Ks3_kuRAzHs",
+      "viewCount": 115029849,
+      "tier": "Hard"
+    }
+  ]
+}

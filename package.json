@@ -1,0 +1,14 @@
+{
+  "name": "bettersongdle",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Heardle-style song guessing game",
+  "scripts": {
+    "gather": "node --env-file=.env scripts/gather-songs.mjs",
+    "serve": "node scripts/serve.mjs"
+  },
+  "devDependencies": {
+    "playwright": "^1.62.1"
+  }
+}
