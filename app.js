@@ -36,6 +36,9 @@ let snippetTimer = null;
 let playStartTime = null;
 let playbackArmed = false; // true from click until YouTube confirms playback actually started
 let audioPlaying = false; // true only once real playback has started and the reveal timer is running
+let warmingUp = false; // true while silently pre-buffering a freshly-cued video
+let pendingWarmUp = false; // true after cueing, until CUED confirms it's ready to warm up
+let warmUpComplete = false; // true once warm-up has already parked the player at startOffset
 
 const difficultyList = document.getElementById('difficultyList');
 const pillRow = document.getElementById('pillRow');
@@ -234,14 +237,41 @@ window.onYouTubeIframeAPIReady = function onYouTubeIframeAPIReady() {
         if (pendingVideoId) {
           player.cueVideoById(pendingVideoId);
           pendingVideoId = null;
+          pendingWarmUp = true;
         }
       },
       onStateChange: (event) => {
+        // Calling playVideo() immediately after cueVideoById(), in the same
+        // tick, gets silently dropped by the IFrame API — the player just
+        // sits at CUED forever. So the warm-up waits for CUED to actually
+        // land before triggering the muted play that pre-buffers the stream.
+        if (event.data === YT.PlayerState.CUED && pendingWarmUp) {
+          pendingWarmUp = false;
+          warmingUp = true;
+          player.mute();
+          player.playVideo();
+          return;
+        }
+
+        if (event.data !== YT.PlayerState.PLAYING) return;
+
+        // Silently pre-buffered a freshly-cued video — once it's actually
+        // flowing, immediately mute-pause-rewind so the player is primed
+        // and ready for the real, user-triggered play.
+        if (warmingUp) {
+          warmingUp = false;
+          player.pauseVideo();
+          player.seekTo(currentSong?.startOffset || 0, true);
+          player.unMute();
+          warmUpComplete = true;
+          return;
+        }
+
         // playVideo() doesn't guarantee audio starts immediately — a freshly
         // cued video often needs to buffer first, especially on the very
         // first play. Only start the reveal timer once YouTube confirms
         // playback has actually begun, instead of assuming it's instant.
-        if (event.data === YT.PlayerState.PLAYING && playbackArmed) {
+        if (playbackArmed) {
           playbackArmed = false;
           beginSnippetTimer();
         }
@@ -273,6 +303,9 @@ function newRound() {
   playBtn.classList.remove('playing');
   playbackArmed = false;
   audioPlaying = false;
+  warmingUp = false;
+  pendingWarmUp = false;
+  warmUpComplete = false;
   playStartTime = null;
   if (playerReady) player.pauseVideo();
   guessInput.value = '';
@@ -285,6 +318,7 @@ function newRound() {
 
   if (playerReady) {
     player.cueVideoById(currentSong.videoId);
+    pendingWarmUp = true;
   } else {
     pendingVideoId = currentSong.videoId;
   }
@@ -317,7 +351,25 @@ function playSnippet() {
   if (!playerReady || !currentSong || ended) return;
   clearTimeout(snippetTimer);
 
-  player.seekTo(currentSong.startOffset || 0, true);
+  // A real click always takes priority over an in-flight background
+  // warm-up — cancel it so the upcoming PLAYING event isn't misrouted into
+  // the warm-up's mute-pause-rewind cleanup instead of actually starting.
+  pendingWarmUp = false;
+  if (warmingUp) {
+    warmingUp = false;
+    player.unMute();
+  }
+
+  // Skip the redundant seek if warm-up already parked the player exactly
+  // here — re-seeking to the same spot can force YouTube to re-buffer,
+  // undoing the whole point of warming it up in the background. Only
+  // applies to this one play — once playback moves the position, later
+  // clicks (a second attempt, replaying after a manual stop) need the
+  // real seek again.
+  if (!warmUpComplete) {
+    player.seekTo(currentSong.startOffset || 0, true);
+  }
+  warmUpComplete = false;
   player.playVideo();
   playBtn.classList.add('playing');
   playbackArmed = true; // beginSnippetTimer() fires once PLAYING is confirmed
