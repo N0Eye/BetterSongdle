@@ -34,6 +34,8 @@ let pendingVideoId = null;
 let pendingVolume = null;
 let snippetTimer = null;
 let playStartTime = null;
+let playbackArmed = false; // true from click until YouTube confirms playback actually started
+let audioPlaying = false; // true only once real playback has started and the reveal timer is running
 
 const difficultyList = document.getElementById('difficultyList');
 const pillRow = document.getElementById('pillRow');
@@ -234,6 +236,16 @@ window.onYouTubeIframeAPIReady = function onYouTubeIframeAPIReady() {
           pendingVideoId = null;
         }
       },
+      onStateChange: (event) => {
+        // playVideo() doesn't guarantee audio starts immediately — a freshly
+        // cued video often needs to buffer first, especially on the very
+        // first play. Only start the reveal timer once YouTube confirms
+        // playback has actually begun, instead of assuming it's instant.
+        if (event.data === YT.PlayerState.PLAYING && playbackArmed) {
+          playbackArmed = false;
+          beginSnippetTimer();
+        }
+      },
     },
   });
 };
@@ -259,6 +271,8 @@ function newRound() {
   ended = false;
   clearTimeout(snippetTimer);
   playBtn.classList.remove('playing');
+  playbackArmed = false;
+  audioPlaying = false;
   playStartTime = null;
   if (playerReady) player.pauseVideo();
   guessInput.value = '';
@@ -302,11 +316,24 @@ function updateSnippetUI() {
 function playSnippet() {
   if (!playerReady || !currentSong || ended) return;
   clearTimeout(snippetTimer);
-  const { duration, pct } = currentAttemptStats();
 
-  player.seekTo(0, true);
+  player.seekTo(currentSong.startOffset || 0, true);
   player.playVideo();
   playBtn.classList.add('playing');
+  playbackArmed = true; // beginSnippetTimer() fires once PLAYING is confirmed
+  audioPlaying = false;
+  playStartTime = null;
+
+  snippetFill.style.transition = 'none';
+  snippetFill.style.width = '0%';
+}
+
+// Called once YouTube's onStateChange confirms audio is actually flowing
+// (not just requested) — only then do we know "duration seconds from now"
+// means something real, so the reveal timer starts here, not at click time.
+function beginSnippetTimer() {
+  const { duration, pct } = currentAttemptStats();
+  audioPlaying = true;
   playStartTime = Date.now();
 
   // Grow the fill live from 0 to this attempt's threshold over the snippet's
@@ -321,6 +348,7 @@ function playSnippet() {
   snippetTimer = setTimeout(() => {
     player.pauseVideo();
     playBtn.classList.remove('playing');
+    audioPlaying = false;
   }, duration * 1000);
 }
 
@@ -331,9 +359,11 @@ function stopSnippet() {
   clearTimeout(snippetTimer);
   if (playerReady) {
     player.pauseVideo();
-    player.seekTo(0, true);
+    player.seekTo(currentSong?.startOffset || 0, true);
   }
   playBtn.classList.remove('playing');
+  playbackArmed = false;
+  audioPlaying = false;
   playStartTime = null;
 
   snippetFill.style.transition = 'none';
@@ -342,8 +372,16 @@ function stopSnippet() {
 
 // Called when the threshold moves (wrong guess/skip) while audio is still
 // playing — extends the same continuous playback to the new cutoff instead
-// of cutting it off at the old one or restarting it.
+// of cutting it off at the old one or restarting it. If playback hasn't
+// actually started yet (still buffering), there's nothing to extend —
+// beginSnippetTimer() will pick up the new, already-updated duration
+// whenever PLAYING does fire.
 function extendSnippetPlayback() {
+  if (!audioPlaying) {
+    updateAttemptIndicators();
+    return;
+  }
+
   const maxDuration = REVEAL_DURATIONS[REVEAL_DURATIONS.length - 1];
   const { duration: newDuration, pct: newPct } = updateAttemptIndicators();
   const elapsed = (Date.now() - playStartTime) / 1000;
@@ -358,6 +396,7 @@ function extendSnippetPlayback() {
   if (remaining <= 0) {
     player.pauseVideo();
     playBtn.classList.remove('playing');
+    audioPlaying = false;
     snippetFill.style.width = `${newPct}%`;
     return;
   }
@@ -367,6 +406,7 @@ function extendSnippetPlayback() {
   snippetTimer = setTimeout(() => {
     player.pauseVideo();
     playBtn.classList.remove('playing');
+    audioPlaying = false;
   }, remaining * 1000);
 }
 
@@ -397,6 +437,8 @@ function endRound(success) {
   ended = true;
   clearTimeout(snippetTimer);
   playBtn.classList.remove('playing');
+  playbackArmed = false;
+  audioPlaying = false;
   playStartTime = null;
   if (playerReady) player.pauseVideo();
 
